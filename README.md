@@ -4,11 +4,11 @@ SummonsBoard's utopia schedule notifier
 
 ## Usage
 ```
-> bundle exec bin/utopia_dungeon_notifier check ${uid}
+> bundle exec bin/utopia_dungeon_notifier check ${uid} ${imKayac_UserName} ${imKayac_SecretKey}
 ```
 or
 ```
-> bundle exec bin/utopia_dungeon_notifier schedule ${uid}
+> bundle exec bin/utopia_dungeon_notifier schedule ${uid} ${imKayac_UserName} ${imKayac_SecretKey}
 ```
 
 ## Contributing
