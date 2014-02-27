@@ -19,7 +19,6 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency "thor"
-  spec.add_dependency "pit"
   spec.add_dependency "im-kayac"
 
   spec.add_development_dependency "bundler", "~> 1.3"
