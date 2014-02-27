@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require 'utopia_dungeon_notifier'
+
+UtopiaDungeonNotifier::CLI.start
