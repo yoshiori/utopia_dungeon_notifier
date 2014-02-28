@@ -22,10 +22,12 @@ module UtopiaDungeonNotifier
       @secret_key = secret_key
       event = SummonsBoard::Event.new(uid: uid)
       text = "今日のユートピアダンジョンは "
-      event.schedule[:times].each do |active_time|
+      schedule = event.schedule
+      schedule[:times].each do |active_time|
         text << "#{active_time.first.strftime("%H")}時 "
       end
-      im_kyac.post(text)
+      text << "\nイベントダンジョンは #{schedule[:weekly]}"
+      im_kyac.handler('http://sb.gungho.jp/member/info/articleinfo001_3iam.html').post(text)
     end
 
     private
